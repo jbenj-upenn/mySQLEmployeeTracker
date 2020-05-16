@@ -8,5 +8,20 @@
     "dotenv": "^8.2.0",
     "inquirer": "^6.2.1",
     "mysql": "^2.16.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenj-upenn/mySQLEmployeeTracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbenj-upenn/mySQLEmployeeTracker/issues"
+  },
+  "homepage": "https://github.com/jbenj-upenn/mySQLEmployeeTracker#readme"
 }
