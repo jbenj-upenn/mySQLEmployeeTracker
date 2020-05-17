@@ -7,4 +7,4 @@ const firstQs = [
     }
 ]
 
-module.exports = firstQs;
+module.exports = firstQs;   
