@@ -69,7 +69,7 @@ function start() {
       })
 
       .then(function(answer) {
-        // based on their answer, either call the bid or the post functions
+        // go to user's choice
         if (answer.initialize === "View all departments") {
           viewDepts();
         }else if(answer.initialize === "View all employees") {
@@ -91,23 +91,66 @@ function start() {
   }
   
 function viewDepts (){
-    connection.query(`SELECT * FROM departments`), (err,results,field) =>{
-        if (err){ throw(err)}
-        console.log(results)
-    }
-}
+        // user chooses the department s/he wants to view
+        inquirer
+          .prompt({
+              name: "deptChoices",
+              type: "list",
+              message: "Which department would you like to view?",
+              choices: [
+                  "Sales",
+                  "Engineering",
+                  "Finance",
+                  "Legal",
+              ]
+            });
+        }
+
+        connection.query(`SELECT * FROM departments`), (err,results,field) =>{
+            if (err){ throw(err)}
+            console.log(results)
+        }
+    
 function viewEmps (){
+        // user chooses the department s/he wants to view
+        inquirer
+          .prompt({
+              name: "empNames",
+              type: "input",
+              message: "Which employee would you like to view?",
+            });
+
+            //if/then to view the various deparments
+            
     connection.query(`SELECT * FROM employees`), (err,results,field) =>{
         if (err){ throw(err)}
         console.log(results)
     }
 }
+
 function viewRoles (){
+    inquirer
+          .prompt({
+              name: "roles",
+              type: "list",
+              message: "Which role would you like to view?",
+              choices: [
+                  "Head of Sales",
+                  "Salesperson",
+                  "Lead Engineer",
+                  "Software Engineer",
+                  "Account Manager",
+                  "Accountant",
+                  "Legal Team Lead", 
+                  "Lawyer"
+              ]
+            });
+        }
     connection.query(`SELECT * FROM roles`), (err,results,field) =>{
         if (err){ throw(err)}
         console.log(results)
     }
-}
+
 function addDepts (){
     connection.query(`SELECT * FROM `), (err,results,field) =>{
         if (err){ throw(err)}
