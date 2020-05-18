@@ -90,7 +90,43 @@ function start() {
       });
   }
   
+function viewDepts (){
+    connection.query(`SELECT * FROM departments`), (err,results,field) =>{
+        if (err){ throw(err)}
+        console.log(results)
+    }
+}
+function viewEmps (){
+    connection.query(`SELECT * FROM employees`), (err,results,field) =>{
+        if (err){ throw(err)}
+        console.log(results)
+    }
+}
 function viewRoles (){
+    connection.query(`SELECT * FROM roles`), (err,results,field) =>{
+        if (err){ throw(err)}
+        console.log(results)
+    }
+}
+function addDepts (){
+    connection.query(`SELECT * FROM `), (err,results,field) =>{
+        if (err){ throw(err)}
+        console.log(results)
+    }
+}
+function addEmps (){
+    connection.query(`SELECT * FROM roles`), (err,results,field) =>{
+        if (err){ throw(err)}
+        console.log(results)
+    }
+}
+function addRoles (){
+    connection.query(`SELECT * FROM roles`), (err,results,field) =>{
+        if (err){ throw(err)}
+        console.log(results)
+    }
+}
+function updateRoles (){
     connection.query(`SELECT * FROM roles`), (err,results,field) =>{
         if (err){ throw(err)}
         console.log(results)
