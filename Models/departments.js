@@ -1,6 +1,6 @@
-// var connection = require("/dbs/companyStats.js");
+// var connection = require("/dbs/connect.js");
 
-class department {
+module.exports = class department {
     
     constructor(id, title) {
         this.id = id;

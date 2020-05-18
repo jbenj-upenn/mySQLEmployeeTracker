@@ -1,4 +1,6 @@
-const firstQs = [
+
+
+const firstQs = async() => { [
     {
         type: "list",
         name: "starting",
@@ -6,5 +8,6 @@ const firstQs = [
         choices: ["Employee's Department", "Employee's Role", "Employee's Name", "End"]
     }
 ]
+}
 
 module.exports = firstQs;   

@@ -1,7 +1,7 @@
-var connection = require("/dbs/companyStats.js");
-var department = require("/departments.js");
+// var connection = require("/dbs/connect.js");
+var department = require("./departments.js");
 
-class role {
+module.export = class role {
     // Just like constructor functions, classes can accept arguments
     constructor(id, title, salary, department_id) {
         this.id = id;
@@ -18,4 +18,4 @@ class role {
     }
 }
 
-module.exports = roles;
+// module.exports = roles;

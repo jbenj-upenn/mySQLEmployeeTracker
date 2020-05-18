@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS company_DB;
 --Creates the db
 CREATE DATABASE company_DB;
 --Uses the db
-USE DATABASE company_DB;
+USE company_DB;
 
 --============CREATE TABLES: DEPARTMENT
 CREATE TABLE department (
